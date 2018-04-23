@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  become: False
+  tasks:
+    - name: create cluster
+      qubole_cluster:
+        api_key:                  '{{api_key|mandatory}}'
+        state:                    '{{state|mandatory}}'
+        cluster_id:               '{{cluster_id|default(omit)}}'
+        label:                    ['test-ansible-module-cluster']
+        aws_region:               '{{aws_region|default(omit)}}'
+        vpc_id:                   '{{vpc_id|default(omit)}}'
+        subnet_id:                '{{subnet_id|default(omit)}}'
+        bastion_node_public_dns:  '{{bastion_node_public_dns|default(omit)}}'
