@@ -9,7 +9,7 @@ Completed modules:
 # installation
 Module requires qds-sdk python pakage
 ```
-pip install qds-sdk
+pip install -r requirements.yml
 ```
 install qubole modules
 ```
@@ -20,13 +20,13 @@ Get the latest code
 ```
 git clone git@github.com:nrgene/qubole_ansible_modules.git
 ```
-Run test playbook
-Create cluster
+Run test playbook.
+Create cluster:
 ```
 cd qubole_ansible_modules/
 ansible-playbook test.yml -e api_key=xyxyxyxyxyxyxyxyxyxyxy -e state=setup
 ```
-Delete cluster
+Delete cluster:
 ```
 ansible-playbook test.yml -e api_key=xyxyxyxyxyxyxyxyxyxyxy -e state=delete -e cluster_id=test-ansible-module-cluster
 ```

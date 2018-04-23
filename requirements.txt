@@ -1,0 +1,6 @@
+ansible==2.4.2.0
+ansible-lint
+awscli>=1.14.32
+boto3>=1.5.22
+boto>=2.48.0
+qds-sdk >= 1.9.8
