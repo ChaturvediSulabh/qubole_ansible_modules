@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: Viktor Berlov
+  description: This is a package of all the qubole modules
+  company: nrgene
+  min_ansible_version: 2.2
+  platforms:
+    - name: RHEL
+      versions:
+        - all
+    - name: Amazon
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  categories:
+    - cloud
+    - bigdata
+dependencies: []
